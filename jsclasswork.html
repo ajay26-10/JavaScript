@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("1\n2 3\n4 5 6")
+        console.log("* * *   * * *\n  * *   * *\n    *   *\n      *")
+
+        {
+            let a = 1, b = 2, c = 3, d = 4, e = 5, f = 6;
+            sum = a + b + c + d + e + f;
+            document.write(`a=${a} b=${b} c=${c} d=${d} e=${e} f=${f} <br>Sum=${sum}`)
+        }
+
+        {
+            let a = 3 + 4 - 1;
+            let b = (3 * 5) + 1;
+            let c = (5 * 2) / 2;
+            let d = 10 * 2 + 3 - 1;
+            let e = 10 % 2;
+            let f = 17 ** 2;
+            let g = (5 * 6) % 4;
+
+            document.write(`<br><br>3+4-1=${a} <br>(3*5)+1=${b} <br>(5*2)/2=${c} <br>10*2+3-1=${d} <br>10%2=${e} <br>17**2=${f} <br>(5*6)%4=${g}`)
+        }
+
+        {
+            f=100;      
+            console.log("Farenheit=" +f +"°F" +" Celsius=" +((f-32)/1.8) +"°C")
+        }
+
+        {
+            let a=25,b=4;
+            let s;
+            console.log("a=" +a +" b=" +b +"\nSmallest Number=" +(s=(a<b)?a:b))
+        }
+
+        {
+            let a=100,b=57,c=120;
+            let l;
+            document.write(`<br><br> a=${a} b=${b} c=${c}`)
+            document.write("<br>Largest Number=" +(l=(a>b&&a>c)?a:(b>c)?b:c))
+        }
+
+        {
+            let a=5;
+            document.write("<br> <br>Sqaure of " +a +"=" +a**2)
+        }
+    </script>
+</body>
+
+</html>

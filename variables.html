@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Variables in JavaScript</h2>
+    <!-- <p id="sum"></p> -->
+    <p id="val"></p>
+    <p id="valu"></p>
+    <p id="va"></p>
+    <p id="c"></p>
+    <script>
+
+        // var a=5;
+        // var b=10;
+        // var c=a+b;
+        // document.getElementById("sum").innerHTML=c
+        
+        const c=30;         //to print const value, hide gobal let
+        
+        let a=22;
+        
+        {
+            let a=10;       //value of a ONLY within this block is 10
+            document.getElementById("val").innerHTML="Declared using let in block =&nbsp"+ a 
+        }
+        
+        var b=20;           //b assigned value of 20
+
+        var b=45;           //value of b gets reassigned as 45
+        
+        {
+            var b=100;      //value of b gets reassigned again as 100
+        }
+        
+        document.getElementById("valu").innerHTML="Declared using let = "+ a      //final value of a
+        document.getElementById("va").innerHTML="Declared using var = "+ b     //final value of b
+        document.getElementById("c").innerHTML="Declared using const = "+ c      //final value of c
+
+
+
+    </script>
+</body>
+</html>

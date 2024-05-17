@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            let a=3.5,b=2.4;
+            let c=a+b;
+            document.write(`a=${a} b=${b} <br> a+b=${c}`);
+            document.write("<br>Datatype of Sum is : " , typeof(c));
+        }
+
+        {
+            let a=104.5, b=5;
+            let c=a/b;
+            document.write(`<br><br>a=${a} b=${b} <br> a/b=${c}`);
+            document.write("<br>Datatype of Division is : " , typeof(c));
+        }
+
+        {
+            let a=4.5, b=2;
+            let c=a*b;
+            document.write(`<br><br>a=${a} b=${b} <br> a*b=${c}`);
+            document.write("<br>Datatype of Division is : " , typeof(c));
+        }
+
+        {
+            let x=5;
+            document.write(`<br><br>x=${x}`);
+            document.write("<br>Datatype of x is : " , typeof(x));
+        }
+
+        {
+            let x=3.5;
+            document.write(`<br><br>x=${x}`);
+            document.write("<br>Datatype of x is : " , typeof(x));
+        }
+
+        {
+            let x="a";
+            document.write(`<br><br>x=${x}`);
+            document.write("<br>Datatype of x is : " , typeof(x));
+        }
+
+       {
+            let x="hello";
+            document.write(`<br><br>x=${x}`)
+            document.write("<br>Datatype of x is : ", typeof(x));
+       }
+
+        {
+            let x=null;
+            document.write(`<br><br>x=${x}`);
+            document.write("<br>Datatype of x is : " , typeof(x));
+        }        
+
+        {
+            let x;
+            document.write(`<br><br>x=${x}`);
+            document.write("<br>Datatype of x is : " , typeof(x));
+        }
+
+        {
+            let fname="Ajay", lname="Thampi";
+            document.write(`<br><br>First Name=${fname} <br> Last Name=${lname}`);
+            document.write(`<br>Full Name: ${fname.concat(" ",lname)}`);
+        }
+
+        {
+            let str="MongoDB is a decentralised distributed ledger. MongoDB can eliminate centralisation.";
+            document.write("<br><br>String is: " ,str); 
+            document.write("<br>Replaced String is: " ,str.replace(/MongoDB/g, "Blockchain"));
+        }
+
+        {
+            const films=["Kireedam", "Spadikam", "Drishyam", "Manichitrathazhu", "Devasuram", "Thanmathra","Premam", "Nadodikaattu", "Guru", "Kumbalangi Nights"];
+            document.write("<br><br> Favourite Films: ", films)
+            document.write("<br>Favourite Movie: ", films[3]);
+            films.push("Godfather");
+            document.write("<br><br> Updated Favourite Films: ", films);
+            document.write("<br><br>Removed Film: ", films.pop());
+            document.write("<br>Renewed Favourite Films: ", films);
+            document.write("<br><br>Least Favourite Movie: ", films[8]);
+            delete(films[8]);
+            document.write("<br>Current Movie List: ", films)
+            const nlist=films.slice(2,6);
+            document.write("<br><br>New List: ", nlist);
+            document.write("<br><br>My Favourite movie 'Premam' at:", films.indexOf("Premam")+1);
+
+        }
+    </script>
+</body>
+</html>

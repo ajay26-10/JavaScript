@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Operators</h2>
+    <script>
+        {
+            let a = 8;
+            let b = 6;
+            document.write("a=" + a)
+            document.write(" b=" + b + "<br>")
+            a += b;
+            document.write("Sum Equal To :" + a + "<br>")
+        }
+
+        {
+            let a = 8;
+            let b = 6;
+            document.write("<br>a=" + a)
+            document.write(" b=" + b + "<br>")
+            a -= b;
+            document.write("Difference Equal To :" + a + "<br>")
+        }
+
+        {
+            let a = 5;
+            let b = 3;
+            document.write("<br> a=" + a)
+            document.write(" b=" + b + "<br>")
+            a *= b;
+            document.write("Mutliplication Equal To :" + a + "<br>")
+        }
+
+        {
+            let a = 20;
+            let b = 5;
+            document.write("<br> a=" + a)
+            document.write(" b=" + b + "<br>")
+            a /= b;
+            document.write("Division Equal To :" + a + "<br>")
+        }
+
+        {
+            let a = 5;
+            document.write("<br>a=" + a)
+            a = a ** 3;
+            document.write("<br>a to power 3=" + a + "<br>")
+        }
+
+        {
+            let x = 27;
+            let y = 44;
+            z = x == y;
+            document.write("<br>x=" + x)
+            document.write(" y= " + y + "<br>")
+            document.write("Is x equal to y: " + z + "<br>")
+        }
+
+        {
+            let m = 9;
+            let n = 4;
+            o = m > n;
+            document.write("<br>m=" + m)
+            document.write(" n= " + n + "<br>")
+            document.write("Is m greater than n: " + o + "<br>")
+        }
+
+        {
+            let m = 9;
+            let n = 4;
+            o = m < n;
+            document.write("<br>m=" + m)
+            document.write(" n= " + n + "<br>")
+            document.write("Is m less than than n: " + o + "<br>")
+        }
+
+        {
+            let p = "5";
+            let q = 5;
+            r = p === q;
+            document.write("<br>p='5'")
+            document.write(" q= " + q + "<br>")
+            document.write("Is p equal to q: " + r + "<br>")
+        }
+
+        {
+            document.write("<br><br><br><br>Increment Operations")
+            let a = 56;
+            document.write("<br><br>Before Increment a=" + a + " After Increment a=" + (++a))
+            b = ++a;
+            c = a++;
+            document.write("<br>Preincrement Operation Value of b= " + b)
+            document.write("<br>Postincrement Operation Value of c= " + c)
+            document.write("<br>Current Value of a= " + a)
+        }
+
+        {
+            let a = 21;
+            let b = 21;
+            document.write(`<br><br>Value of a before increment=${a}, Value of b before increment=${b}`)
+            c = ++a;
+            d = b++
+            document.write("<br>Preincrement value of c=" + c)
+            document.write("<br>Postincrement value of d=" + d)
+            document.write("<br>Current Value of b=" +b)
+        }
+
+        {   
+            let a = 67;
+            b = 99;
+            document.write(`<br><br>Value of a before decrement=${a}, Value of b before decrement=${b}`)
+            c = --a;
+            d = b--;
+            document.write(`<br>Predecrement value of c=${c}, Postdecrement value of d=${d}, Current value of b=${b}`)
+        }
+
+        {
+            document.write("<br><br><br><br>Bitwise Operations")
+            let a = 5, b = 1;
+            j = a & b;
+            document.write("<br><br>" + a + " " + b)
+            document.write("<br>Bitwise AND Operator:" + j)
+        }
+
+        {
+            let a = 5, b = 1;
+            j = a | b;
+            document.write("<br><br>" + a + " " + b)
+            document.write("<br>Bitwise OR Operator:" + j)
+        }
+
+        {
+            document.write("<br><br><br><br>Logical Operations")
+            let a = 2, b = 4, c = 7, d = 8;
+            m = (a < b) && (d > c)
+            document.write(`<br><br>a=${a} b=${b} c=${c} d=${d}`)
+            document.write("<br> m=a&ltb && d&gtc <br>")
+            document.write("Logical AND Operation:" + m)
+        }
+
+        {
+            let a = 2, b = 4, c = 7, d = 8;
+            m = (a < b) && (d < c)
+            document.write(`<br><br>a=${a} b=${b} c=${c} d=${d}`)
+            document.write("<br> m=a&ltb && d&ltc <br>")
+            document.write("Logical AND Operation:" + m)
+        }
+
+        {
+            let a = 2, b = 4, c = 7, d = 8;
+            m = (a < b) || (d < c)
+            document.write(`<br><br>a=${a} b=${b} c=${c} d=${d}`)
+            document.write("<br> m=a&ltb || d&ltc <br>")
+            document.write("Logical OR Operation:" + m)
+        }
+
+        {
+            let a = 2, b = 4, c = 7, d = 8;
+            m = (a > b) && (d < c)
+            document.write(`<br><br>a=${a} b=${b} c=${c} d=${d}`)
+            document.write("<br> m=a>b || d&ltc <br>")
+            document.write("Logical OR Operation:" + m)
+        }
+
+        {
+            document.write("<br><br><br><br>Ternary Operations")
+            let age=16;
+            let vote=(age<18)? "Not Eligible" :"Eligible";
+            document.write("<br><br>Age:" +age)
+            document.write("<br>The person is " +vote +" to vote")
+        }
+
+        {
+            let age=26;
+            let vote=(age>18)? "Eligible" :"Not Eligible";
+            document.write("<br><br>Age:" +age)
+            document.write("<br>The person is " +vote +" to vote")
+        }
+    </script>
+</body>
+
+</html>

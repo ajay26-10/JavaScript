@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SWAP</title>
+</head>
+<body>
+    <h2>SWAP</h2>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    <p id="e"></p>
+    <p id="f"></p>
+    <p id="g"></p>
+    <p id="h"></p>
+   
+    <script>
+        {
+        let a=20;
+        let b=10;
+
+        document.getElementById("a").innerHTML="Before Swapping <br><br>a="+ a
+        document.getElementById("b").innerHTML="b="+b
+
+        // document.write("Before Swapping <br>a ="+ a +"<br>b ="+b) 
+        
+        let c=a;
+            a=b;
+            b=c;
+        document.getElementById("c").innerHTML="After Swapping <br><br>a="+ a
+        document.getElementById("d").innerHTML="b=" +b
+            // document.write("<br>After Swapping <br>a =" +a + "<br>b ="+b)
+
+        }
+
+
+        {
+        let a=10;
+        let b=20;
+        
+        document.getElementById("e").innerHTML="Before Swapping <br><br>a=" +a
+        document.getElementById("f").innerHTML="b=" +b
+        
+        
+        a=a+b;
+        b=a-b;
+        a=a-b;
+
+        document.getElementById("g").innerHTML="After Swapping <br><br>a=" +a
+        document.getElementById("h").innerHTML="b=" +b
+        }
+    </script>
+     
+</body>
+</html>

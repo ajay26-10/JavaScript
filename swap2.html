@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap 2</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+
+    <script>
+        
+        let a=10;
+        let b=20;
+        
+        document.getElementById("a").innerHTML="Before Swapping <br><br>a=" +a
+        document.getElementById("b").innerHTML="b=" +b
+        
+        
+        a=a+b;
+        b=a-b;
+        a=a-b;
+
+        document.getElementById("c").innerHTML="After Swapping <br><br>a=" +a
+        document.getElementById("d").innerHTML="b=" +b
+        
+    </script>
+</body>
+</html>

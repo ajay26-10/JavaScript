@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            let x=2;
+            let y=7.77;
+            let z=22/7;
+            let a="Ajay";
+            let b='Ajay';
+            document.write("Datatype of x: " +typeof x);
+            document.write("<br>Datatype of y: " +typeof y);
+            document.write("<br>Datatype of z: " +typeof z);
+            document.write("<br><br>Datatype of a: " +typeof a);
+            document.write("<br>Datatype of b: " +typeof b);
+        } 
+
+        {
+            let a=true;
+            let b=false;
+            document.write("<br><br>Datatype of a: " +typeof a);
+            document.write("<br>Datatype of b: " +typeof b);
+        }
+
+        {
+            let a=4;
+            let b=8;
+            c=a+b;
+            document.write("<br><br>Sum of " +a +" and " +b +" is " +c);
+            document.write("<br>Datatype of the sum: " +typeof c);
+        }
+
+        {
+            let a=23.56;
+            let b=5;
+            c=a+b;
+            document.write("<br><br>Sum of " +a +" and " +b +" is " +c);
+            document.write("<br>Datatype of the sum: " +typeof c);
+        }
+
+        {
+            let a="Hi, my name is";
+            let b=' Ajay';
+            c=a+b;
+            document.write("<br><br>" +c);
+            document.write("<br>Datatype of the statement: " +typeof c);
+        }
+
+        {
+            let a=55;
+            let b="Ajay"
+            c=a+b;
+            document.write("<br><br>Sum of " +a +" and " +b +" is " +c);
+            document.write("<br>Datatype of the sum: " +typeof c);
+            d=b*a;
+            document.write("<br>d is: ",d)
+            document.write("<br>Datatype of d: " +typeof d);
+
+        }
+
+        {
+            let a=29;
+            let b="I am " 
+            let c=" years old."
+            d=b+a+c;
+            document.write("<br><br>I am " +a +" years old.")
+            // document.write("<br>Datatype: " +typeof a);
+            document.write("<br>" +d)
+            // document.write("<br>Datatype: " +typeof d);
+        }
+
+        {
+            let a=13,b=16;
+            let c=" years old"
+            d=a+b+c;
+            e=a+c+b;
+            f=c+a+b;
+            g=c+(b+a);
+            document.write("<br><br>" +d);
+            document.write("<br>Datatype: " +typeof d);
+            document.write("<br>" +e);
+            document.write("<br>Datatype: " +typeof e);
+            document.write("<br>" +f);
+            document.write("<br>Datatype: " +typeof f);
+            document.write("<br>" +g);
+            document.write("<br>Datatype: " +typeof g);
+        }
+
+        {
+            let a="Hi my name is \"AJAY\"";
+            let b='It\'s going to rain';
+            document.write("<br>" +a);
+            document.write("<br>" +b);
+        }
+
+        {
+            let a="Hi my name is Ajay"
+            document.write("<br><br>" +a)
+            document.write("<br>Length of the string is: " +a.length);
+            document.write("<br>Character at 7th position is: " +a.charAt(6));
+            document.write("<br>First character of second word is: " +a.charAt(3));
+            document.write("<br>Character at 4th position is: " +a.at(3));
+            document.write("<br>String in Uppercase: " +a.toUpperCase());
+            document.write("<br>String in Lowercase: " +a.toLowerCase());
+        }
+
+        {
+            let a="Best";
+            a=a.concat(" ", "Wishes");
+            document.write("<br><br>Message : ", a);
+        }
+
+        {
+            let a="Best";
+            let b="Wishes";
+            a=a.concat(" ",b);
+            document.write("<br><br>Message : ", a);
+            document.write("<br><br>Repeated Message : ", a.repeat(5));
+            c="Hi my name is Ajay Thampi"
+            document.write("<br><br>String: ", c);
+            document.write("<br>Slice from 3rd to 9th position: ", c.slice(2,8));
+            document.write("<br>Slice from 7th position: ", c.slice(6));
+            d=" I know JavaScript very well";
+            document.write("<br><br>String: ", d)
+            document.write("<br>Replaced String: ", d.replace(/know/g, "dont know"))
+        }
+
+        {
+            let a="I like this and this and this and that";
+            document.write("<br><br>String: ", a)
+            document.write("<br>Replaced String: ", a.replace(/this/g, "that"))
+            document.write("<br>", a.search(/and/))
+        }
+
+        {
+            a="www.google.co.in";
+            document.write("<br><br>String: ", a)
+            document.write("<br>Split String: ", a.split("."));
+            let b="I like this and this and this and that";
+            document.write("<br><br>String: ", b)
+            document.write("<br>Split Sentence using ' ' : ", b.split(" "));
+            document.write("<br>Split Sentence using 'and' : ", b.split("and"));
+            document.write("<br>Split Sentence using 'this' : ", b.split("this"));   
+        }
+
+        {
+            let k="10";
+            let l="20";
+            let sum=k+l;
+            document.write("<br><br>", sum)
+            let u=Number.parseInt(k);
+            let v=Number.parseInt(l);
+            document.write("<br>Sum of ",u, " and ", v, " = ", u+v);
+        }
+    </script>
+</body>
+</html>

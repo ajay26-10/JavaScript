@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+<body>
+    <h2>Fibonacci Series</h2>
+    <p id="0"></p>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+    <script>
+        a=0;
+        b=1;
+        c=a;        //0
+        document.getElementById("0").innerHTML=c;
+
+        c=a+b;    //0+1
+        document.getElementById("1").innerHTML=c;
+
+        a=c;  //1
+        document.getElementById("2").innerHTML=c;
+ 
+        c=a+b   //1+1
+        document.getElementById("3").innerHTML=c;
+       
+        a=c;
+        c=a+b  //2+1
+        document.getElementById("4").innerHTML=c;
+
+        a=c;
+        b=b+1;
+        c=a+b  //3+2
+        document.getElementById("5").innerHTML=c;
+
+        b=b+1;
+        a=c;
+        c=a+b //5+3
+        document.getElementById("6").innerHTML=c;
+
+        b=b+2;
+        a=c
+        c=a+b //8+3
+        document.getElementById("7").innerHTML=c;
+
+
+
+
+
+
+
+        // a=0;
+        // b=1;
+        // c=a+b;
+        // d=b+c;
+        // e=d+b;
+        // f=e+d;
+        // g=f+e;
+
+        // document.write(a +" " +b +" " +c +" " +d +" " +e +" " +f +" " +g )
+
+    </script>
+
+</body>
+</html>
