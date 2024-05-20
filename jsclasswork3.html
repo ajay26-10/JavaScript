@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function mult2(a,b)
+        {
+            c=a*b;
+            return c;
+        }
+
+        function mutli3(a,b,c)
+        {
+            d=a*b*c;
+            return d;
+        }
+
+        function s(a,b)
+        {
+            c=2*(a+b);
+            return c;
+        }
+        {
+            let list = ["Lion", "Zebra","Rabbit","Tiger","Leopard","Bear","Elephant"];
+            document.write("1.<br>List :" ,list)
+            list.sort();
+            list.reverse();
+            document.write("<br>List Sorted in Reverse :" ,list);
+        }
+
+        {
+            let a="Hello World";
+            let b="hEllO World";
+
+            let c= a==b;
+            document.write(`<br><br>3.<br>a=${a} b=${b} <br>Is a==b: ${c} Type: ${typeof(c)}`);
+            let d= a===b;
+            document.write(`<br>Is a===b: ${d} Type: ${typeof(d)}`);
+        }
+
+        {
+            let a= 29;
+            b=a+10;
+            document.write(`<br><br>4.<br>I am ${a} years old and my brother is 10 yrs older to me. He is now ${b} years old.`);
+        }
+        
+        {
+            let fname= "Ajay";
+            let lname= "Thampi";
+            a=fname.toUpperCase();
+            b=lname.toUpperCase();
+            c=a+" "+b;
+            let d="Kochi"
+            document.write(`<br><br>5.<br>My name is ${c}. I live in ${d.toUpperCase()}.`);
+        }
+
+        {
+            let file= "javascript.js";
+            document.write(`<br><br>6.<br>Filename: ${file}`)
+            document.write(`<br>Filename without extension: ${(file.replace(/.js/g, " "))}`);
+        }
+
+        {
+            let a=14, b=45;
+            c=mult2(a,b);
+            document.write(`<br><br>7.<br>a=${a} b=${b} <br>a*b=${c}`);
+        }
+
+        {
+            let a=12,b=10,c=5;
+            d=mutli3(a,b,c);
+            document.write(`<br><br>8.<br>a=${a} b=${b} c=${c} <br>a*b*c=${d}`);
+        }
+
+        {
+            let a=20;
+            let b=30;
+            c=s(a,b);
+            document.write(`<br><br>9.<br>a=${a} b=${b} <br>2*(a+b)= ${c}`);
+        }
+    </script>
+</body>
+</html>
