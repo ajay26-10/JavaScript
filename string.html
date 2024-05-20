@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            let x="Welcome";
+            let y="Welcome";
+            z = x==y;
+            document.write(z);
+            document.write("<br>",typeof(z));
+        }
+
+        {
+            let x="Welcome";
+            let y="welcome";
+            z = x==y;
+            document.write("<br>", z);      //case sensitive retuns false
+            document.write("<br>",typeof(z));
+        }
+
+        {
+            let x="Welcome";
+            let y= new String("Welcome");     // type of y is object and not string when declard in this format
+            z = x==y;
+            document.write("<br>y=",y);
+            document.write("<br>Type of y:",typeof(y));
+            document.write("<br>",z);
+            document.write("<br>",typeof(z));
+            let a= x===y;
+            document.write("<br>Result:",a);       // x is string, y is object;therefore false
+        }
+
+    </script>
+</body>
+</html>
