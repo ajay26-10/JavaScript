@@ -22,9 +22,10 @@
 
         function s(a,b)
         {
-            c=2*(a+b);
+            c=(a+b);
             return c;
         }
+        
         {
             let list = ["Lion", "Zebra","Rabbit","Tiger","Leopard","Bear","Elephant"];
             document.write("1.<br>List :" ,list)
@@ -62,7 +63,7 @@
         {
             let file= "javascript.js";
             document.write(`<br><br>6.<br>Filename: ${file}`)
-            document.write(`<br>Filename without extension: ${(file.replace(/.js/g, " "))}`);
+            document.write(`<br>Filename without extension: ${(file.replace(/.js/g, ""))}`);
         }
 
         {
@@ -80,7 +81,7 @@
         {
             let a=20;
             let b=30;
-            c=s(a,b);
+            c=2*s(a,b);
             document.write(`<br><br>9.<br>a=${a} b=${b} <br>2*(a+b)= ${c}`);
         }
     </script>
