@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./classwork4.js"></script>
+</head>
+
+<body>
+    <h2>Perimeter</h2>
+    Perimeter of Circle: <p id="pc"></p>
+    Area of Circle: <p id="ac"></p>
+    Perimeter of Rectangle:<p id="pr"></p>
+    Area of Rectangle: <p id="ar"></p>
+    Perimeter of Square:<p id="ps"></p>
+    Area of Square: <p id="as"></p>
+
+    <h2>Full Name</h2>
+    <input id="fname" placeholder="Enter your first name">
+    <input id="lname" placeholder="Enter your last name">
+    <button onclick="fullName()">Click Me</button>
+    <p id="fullname"></p>
+
+    <h2>Details</h2>
+    First Name: <input id="fname2" placeholder="Enter your first name"><br><br>
+    Last Name: <input id="lname2" placeholder="Enter your last name"><br><br>
+    Phone Number: <input id="ph" placeholder="Enter your phone number"><br><br>
+    Date of Birth: <input type="date" id="dob" placeholder="Enter your date of birth"><br><br>
+    <button onclick="detail()">Click Me</button> <br><br>
+    <p id="fullname2"></p>
+    <p id="phone"></p>
+    <p id="db"></p>
+
+    <h2>Issue Certificate</h2>
+    <p>Select Course</p>
+    <select>
+        <option>Certificate Blockchain Associate</option>
+        <option>Certified Ethereum Developer</option>
+        <option>Certified Hyperledger Fabric Developer</option>
+    </select>
+    <p>Certificate ID *</p>
+    <input type="text" id="cid" required placeholder="Certificate ID">
+    <p>Candidate Name *</p>
+    <input type="text" id="cname" required placeholder="Name">
+    <p>Select Grade *</p>
+    <select id="gr">
+        <option value="S">S</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+    <p>Date of Issue *</p>
+    <input type="date" id="cd" name="dois">
+    <button onclick="submit()">Submit</button>
+
+    <script>
+        {
+            const pi = 3.14;
+            let r = 10;
+            let p = periC(pi, r);
+            let a = areaC(pi, r);
+            document.getElementById("pc").innerHTML = p;
+            document.getElementById("ac").innerHTML = a;
+        }
+
+        {
+            let l = 10, b = 35;
+            let p = periR(l, b);
+            let a = areaR(l,b);
+            document.getElementById("pr").innerHTML = p;
+            document.getElementById("ar").innerHTML = a;
+        }
+
+        {
+            let a = 45;
+            let p = periS(a);
+            let b = areaS(a); 
+            document.getElementById("ps").innerHTML = p;
+            document.getElementById("as").innerHTML = b;
+        }
+
+    </script>
+</body>
+
+</html>

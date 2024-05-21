@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(x,y)
+        {
+            z=x+y;
+            return z;
+        }
+
+        function mul(x,y)
+        {
+            z=x*y
+            document.write(`z= ${z}`);
+        }
+
+        function area(x)
+        {
+            x=x**2;
+            return x;
+        }
+
+        function area2(x,y)
+        {
+            z=x*y
+            return z;
+        }
+
+        function area3(x,y)
+        {
+            a=x*y*y;
+            return a;
+        }
+
+        {
+            let a=20,b=30;
+            u=sum(a,b);
+            v=2;
+            mul(u,v);
+        }
+
+        function psq(x)
+        {
+            z=4*x;
+            return z;
+        }
+
+        function prec(x,y)
+        {
+            z=2*(x+y);
+            return z;
+        }
+
+        function pcir(x,y)
+        {
+            z=2*x*y;
+            return z;
+        }
+
+        {
+            let a=25;
+            b=area(a);
+            c=psq(a);
+            document.write(`<br><br>Area of Square with side ${a}= ${b}.`);
+            document.write(`<br>Perimeter of Square with side ${a}= ${c}.`);
+        }
+
+        {
+            let a=25,b=30;
+            c=area2(a,b);
+            d=prec(a,b);
+            document.write(`<br><br>Area of Rectangle with length ${a} and breadth ${b} is ${c}.`);
+            document.write(`<br>Perimeter of Rectangle with length ${a} and breadth ${b} is ${d}.`);
+        }
+
+        {
+            let r= 10;
+            const pi=3.14;
+            c=area3(pi,r);
+            d=pcir(pi,r);
+            document.write(`<br><br>Area of Circle with radius ${r} is ${c}.`);
+            document.write(`<br>Perimeter of Circle with radius ${r} is ${d}.`);
+        }
+    </script>
+</body>
+</html>

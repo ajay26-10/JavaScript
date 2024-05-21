@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input id="text" placeholder="Enter your name" onchange="text();">
+    <p id="print1" ></p>
+    <p id="type1"></p>
+
+    <input id="num" placeholder="Enter a number" onchange="num();">
+    <p id="print2" ></p>
+    <p id="type2"></p> -->
+
+    <input id="fname" placeholder="Enter your first name">
+    <input id="lname" placeholder="Enter your last name">
+    <button onclick="name1()">Click Me</button>
+    <p id="fullname"></p>
+    <script>
+        // function text()
+        // {
+        //     let a=document.getElementById("text").value;
+        //     document.getElementById("print1").innerHTML=a;
+        //     document.getElementById("type1").innerHTML=typeof(a);
+        // }
+
+        // function num()
+        // {
+        //     let a=document.getElementById("num").value;
+        //     document.getElementById("print2").innerHTML=a;
+        //     document.getElementById("type2").innerHTML=typeof(a);
+
+        // }
+
+        function name1()
+        {
+            let x=document.getElementById("fname").value;
+            let y=document.getElementById("lname").value;
+            let z=x+" "+y;
+            document.getElementById("fullname").innerHTML=z;
+        }
+    </script>
+</body>
+</html>
