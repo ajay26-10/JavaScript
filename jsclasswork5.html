@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./classwork5.js"></script>
+</head>
+<body>
+    Enter a Number : <input id="num" placeholder="Enter a Number">  <br>
+    <button onclick="square()">SQUARE</button>
+    Square of the number= <scan id="sqr"></scan>    <br><br>
+    <button onclick="cube()">CUBE</button>
+    Cube of the number= <scan id="cub"></scan>      <br><br>
+
+    Enter Principal Amount : <input id="prin" placeholder="Enter Principal Amount">
+    Enter Interest Rate : <input id="rate" placeholder="Enter Interest Rate (%)">
+    Enter Time : <input id="time" placeholder="Enter number of years">
+    <button onclick="si()">SI</button>  <br>
+    Simple Interest= <scan id="sint"></scan>    <br><br>
+
+    Enter Principal Amount : <input id="prin2" placeholder="Enter Principal Amount">
+    Enter Interest Rate : <input id="rate2" placeholder="Enter Interest Rate (%)">
+    Enter No of Compounding : <input id="ncomp" placeholder="Enter no of Compounding">
+    Enter Time : <input id="time2" placeholder="Enter number of years">
+    <button onclick="ci()">CI</button> <br>
+    Compund Interest= <scan id="cint"></scan>   <br><br>
+
+    List of Fruits:<scan id="f"></scan> <br>
+    <input id="fruit" placeholder="Enter a number">
+    <button onclick="fruit()">Select a Fruit</button>
+    <p id="fr"></p>    
+
+    <script>
+        let fruits=["Apple","Mango","Banana","Watermelon","Grape"];
+        document.getElementById("f").innerHTML=fruits;
+    </script>
+</body>
+</html>
