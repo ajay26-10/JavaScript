@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./arrowFn.js"></script>
+    <!-- <script src="./arrowFn.js"></script> -->
 </head>
 
 <body>
-    First Number: <input id="fn" placeholder="Enter First Number"> &nbsp
+    <!-- First Number: <input id="fn" placeholder="Enter First Number"> &nbsp
     Second Number: <input id="sn" placeholder="Enter Second Number"><br><br>
     <button onclick="sum()">ADD</button>
-    <p id="sm"></p>
+    <p id="sm"></p> -->
+
+    <script>
+        sum=(a,b)=>a+b;
+
+        sumMul=()=>{
+            let a=10;
+            let b=40;
+            let c=20;
+            mult=c*sum(a,b);
+            document.write(mult);
+        }
+        sumMul();
+    </script>
 </body>
 
 </html>

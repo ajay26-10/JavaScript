@@ -34,7 +34,7 @@ ci=()=>{
     let n=document.getElementById("ncomp").value;
     n=Number.parseInt(n);
 
-    let a=(p(*(1+(r/n))**(n*t)));
+    let a=(p*((1+(r/n))**(n*t)));
     let i= a-p;
     document.getElementById("cint").innerHTML=i;
 }

@@ -1,4 +1,4 @@
-sum = () => {
+sum=()=>{
     let a = document.getElementById("fn").value;  //currently the value of a is stored as string and not number
     let b = document.getElementById("sn").value;  //currently the value of b is stored as string and not number
     a = Number.parseInt(a);

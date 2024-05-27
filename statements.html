@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="uname" placeholder="Enter Username">
+    <button onclick="check()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        let y = "ajay";
+        function check() {
+            let a = document.getElementById("uname").value;
+            console.log(a);
+            if (a == y) {
+                document.getElementById("result").innerHTML = "Username Match";
+            }
+            else {
+                document.getElementById("result").innerHTML = "Username Not Match";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

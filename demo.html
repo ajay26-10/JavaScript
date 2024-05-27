@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="fname" placeholder="Enter your first name">
+    <input id="lname" placeholder="Enter your last name">
+    <button onclick="name1()">Click Me</button>
+    <p id="fullname"></p>
+
+    <script>
+    function name1()
+        {
+            console.log(event)
+            let x=document.getElementById("fname").value;
+            let y=document.getElementById("lname").value;
+            let z=x+" "+y;
+            document.getElementById("fullname").innerHTML=z;
+        }
+    </script>
+</body>
+
+</html>
