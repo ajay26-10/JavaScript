@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>StudentJS</title>
     <script src="./jsAssign.js"></script>
 </head>
 <body>
-    List of students: <span id="student"></span>
+    <h2>Student name from an array</h2>
+    List of students: <span id="student"></span><br><br>
     <input id="no" placeholder="Enter a number">
-    <button onclick="studname()">Select</button> <br>
+    <button onclick="studname()">Select</button> <br><br>
     Name of Student: <span id="name1"></span>
 
-    <br><br>
-
-    Name: <span id="nm"></span> <br>
+    <br><br><br><br>
+    <h2>Student Details Stored in Object</h2>
+    <p>Student Details by inputing name</p>
+    <input id="nm" placeholder="Enter the name of the student">
+    <button onclick="student()">Get Details</button> <br><br>
+    Name: <span id="name2"></span> <br>
     Rollno: <span id="rn"></span> <br>
     Class: <span id="cls"></span> <br>
     Address: <span id="add"></span>
+    <p id="error"></p>
 
     <script>
         let students=["Ajay", "Vijay", "Bijoy", "Sijo" , "Dijoy", "Mijo", "Tijo", "Prasad"];
         document.getElementById("student").innerHTML=students;
 
         let person={
-            name:"Ajay Thampi",
+            name:"Abhi",
             rollno: "1",
             class:"CBA",
             address:"Siva Classics Karyavattom"
         }
 
-        document.getElementById("nm").innerHTML=person.name;
-        document.getElementById("rn").innerHTML=person.rollno;
-        document.getElementById("cls").innerHTML=person.class;
-        document.getElementById("add").innerHTML=person.address;
+
+        function student(){
+        let n=document.getElementById("nm").value;
+
+        if(n==person.name){
+        document.getElementById("name2").innerHTML= person.name;
+        document.getElementById("rn").innerHTML= person.rollno;
+        document.getElementById("cls").innerHTML= person.class;
+        document.getElementById("add").innerHTML= person.address;
+        }
+        else{
+            document.getElementById("error").innerHTML="Details not found!"
+        }
+        }
     </script>
 </body>
 </html>

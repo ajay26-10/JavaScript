@@ -18,7 +18,5 @@ function movies(){
     details.m=localStorage.getItem("Movie");
     details.t=localStorage.getItem("Ticket");
 
-    document.getElementById("na").innerHTML= details.n;
-    document.getElementById("mv").innerHTML= details.m;
-    document.getElementById("tk").innerHTML= details.t;
+    alert("Successfully Booked")
 }

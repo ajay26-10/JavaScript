@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Calculator</title>
+	</head>
+	<br>
+	<body>
+		<center>		 
+		<table border=1; bgcolor= #3B3B3B style="border-radius:4px">
+			<tr>
+				<td colspan=4> <input type="text" name="num" id="disp" readonly placeholder="0" style= "background-color:#BDEE75; text-align:right; width:104px;
+				border-radius:4px">
+				</td>
+			</tr>
+			<tr>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="7" onclick="buttonClick(7)">7</button></td>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="8" onclick="buttonClick(8)">8</button></td>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="9" onclick="buttonClick(9)">9</button></td>
+				<td><button type="button" style="background-color:#07D7F0; color:white; border-radius:2px" value="/" onclick="buttonClick('/')">÷</button></td>	
+			</tr>
+			<tr>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="4" onclick="buttonClick(4)">4</button></td>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="5" onclick="buttonClick(5)">5</button></td>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="6" onclick="buttonClick(6)">6</button></td>
+				<td><button type="button" style="background-color:#07D7F0; color:white; border-radius:2px" value="*" onclick="buttonClick('*')">×</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="1" onclick="buttonClick(1)">1</button></td>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="2" onclick="buttonClick(2)">2</button></td>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="3" onclick="buttonClick(3)">3</button></td>
+				<td><button type="button" style="background-color:#07D7F0; color:white; border-radius:2px" value="-" onclick="buttonClick('-')">−</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="0" onclick="buttonClick(0)">0</button></td>
+				<td><button type="button" style="background-color:#C4C3C3; color:white; border-radius:2px" value="." onclick="buttonClick('.')">.</button></td>
+				<td><button type="button" style="background-color:#E40C0C; color:white; border-radius:2px" onclick="calc()">=</button></td>
+				<td><button type="button" style="background-color:#07D7F0; color:white; border-radius:2px" value="+" onclick="buttonClick('+')">+</button></td>
+			</tr>
+		</table>
+		</center>
+
+		<script>
+			function buttonClick(value){
+				disp.value+=value;
+			}
+			function calc()
+			{
+				disp.value=eval(disp.value);
+			}
+		</script>
+	</body>
+</html>
